@@ -1,0 +1,21 @@
+{
+    "name": "admin-server",
+    "version": "2.0.0",
+    "author": "Kamil Frydlewicz",
+    "license": "MIT",
+    "scripts": {
+        "check": "eslint --fix .",
+        "build": "tsc",
+        "start": "node index.js",
+        "watch": "nodemon -e ts,json -x \"npm run build && npm start\""
+    },
+    "dependencies": {
+        "@types/node": "18.11.9",
+        "typescript": "4.8.4"
+    },
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "5.42.1",
+        "@typescript-eslint/parser": "5.42.1",
+        "eslint": "8.27.0"
+    }
+}
