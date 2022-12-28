@@ -1,0 +1,15 @@
+.main {
+    flex-wrap: wrap;
+
+    .graph {
+        padding: 10px 15px 10px 5px;
+
+        @media(max-width: 1199px) {
+            width: 100%;
+        }
+
+        @media(min-width: 1200px) {
+            width: 50%;
+        }
+    }
+}

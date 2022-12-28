@@ -1,0 +1,54 @@
+@import './_variables.scss';
+
+nav.nav {
+    border-bottom: 1px solid $borderColor;
+
+    .top {
+        height: 0.4rem;
+        background: linear-gradient(to right, $secondaryColor, $primaryColor);
+    }
+
+    ul {
+        padding: 0.4rem 0;
+        text-align: center;
+
+        li {
+            display: inline-block;
+
+            a {
+                display: inline-block;
+                position: relative;
+                border: 1px solid transparent;
+                border-radius: $borderRadius;
+                font-size: 1.4rem;
+
+                &:hover {
+                    border-color: $primaryColor;
+                    text-decoration: none;
+                }
+
+                img {
+                    height: 2.2rem;
+                }
+
+                @media (max-width: 699px) {
+                    padding: 0.3rem 0.4rem 0 0.4rem;
+
+                    span {
+                        display: none;
+                    }
+                }
+
+                @media (min-width: 700px) {
+                    padding: 0.4rem 0.8rem 0.4rem 2.8rem;
+
+                    img {
+                        position: absolute;
+                        left: 0.4rem;
+                        top: 0.2rem;
+                    }
+                }
+            }
+        }
+    }
+}

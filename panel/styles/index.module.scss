@@ -1,0 +1,46 @@
+@import './_variables.scss';
+
+.main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-image: url(../public/back.webp);
+
+    .title {
+        background: transparent linear-gradient(to right, $primaryColor, $secondaryColor) 0% 0% no-repeat padding-box;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: $primaryColor;
+        text-align: center;
+        line-height: 1.15;
+    }
+
+    .description {
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    @media (max-width: 699px) {
+        .title {
+            font-size: 3rem;
+        }
+
+        .description {
+            font-size: 1.1rem;
+        }
+    }
+
+    @media (min-width: 700px) {
+        .title {
+            font-size: 4rem;
+        }
+
+        .description {
+            font-size: 1.5rem;
+        }
+    }
+}
